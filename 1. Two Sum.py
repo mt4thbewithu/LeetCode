@@ -1,4 +1,5 @@
 #https://leetcode.com/problems/two-sum/description/
+#Pull request用の書き込み
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -77,6 +78,7 @@ class Solution:
 #コメント
 #ロジックを思いつくところまではすぐ行きましたが、細かいスペルミスがあったりして3連続正解を書くのは苦労しました。
 #最終コードは下記です。
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
      flag = False
@@ -88,3 +90,4 @@ class Solution:
                 break
         if flag:
             break
+
