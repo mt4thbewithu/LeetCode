@@ -139,12 +139,16 @@ class Solution:
                     i = i + 1
             if nums2[i] + nums2[j] > target and j > 0:
                 j = j - 1
+            print(nums2[i] + nums2[j])    
             if nums2[i] + nums2[j] < target and i < len(nums2) - 1:
                 i = i + 1
+            print(nums2[i] + nums2[j])
             
         if nums2[i] + nums2[j] == target and i != j:
+            print(nums2[i],nums2[j])
             if nums2[i] == nums2[j]:
                 l = [c for c, x in enumerate(nums) if x == nums2[i]]
+                print(l)
                 return l[0], l[1]
             else:
                 return nums.index(nums2[i]), nums.index(nums2[j])
